@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|c:\\users\\acl - \u00F3scar del r\u00EDo\\source\\repos\\talana\\talana\\handlers\\handlertalana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|solutionrelative:talana\\handlers\\handlertalana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\talana\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|solutionrelative:talana\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:207625229:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HandlerTalana.cs",
+              "DocumentMoniker": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Handlers\\HandlerTalana.cs",
+              "RelativeDocumentMoniker": "Talana\\Handlers\\HandlerTalana.cs",
+              "ToolTip": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Handlers\\HandlerTalana.cs",
+              "RelativeToolTip": "Talana\\Handlers\\HandlerTalana.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowAcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T13:47:54.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Program.cs",
+              "RelativeDocumentMoniker": "Talana\\Program.cs",
+              "ToolTip": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Program.cs",
+              "RelativeToolTip": "Talana\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T13:47:35.14Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
