@@ -123,13 +123,13 @@ namespace Talana.Handlers
 
         static void MarcarEntrada()
         {
-            //var puedeMarcarEntrada = PuedeMarcarEntrada();
-            //if (!puedeMarcarEntrada)
-            //{
-            //    Console.WriteLine("Ya se marcó la entrada.");
-            //    Thread.Sleep(3000);
-            //    Environment.Exit(0);
-            //}
+            var puedeMarcarEntrada = PuedeMarcarEntrada();
+            if (!puedeMarcarEntrada)
+            {
+                Console.WriteLine("Ya se marcó la entrada.");
+                Thread.Sleep(3000);
+                Environment.Exit(0);
+            }
 
             Console.WriteLine("Marcando entrada...");
             var marcadoConExito = TalanaService.MarcarEntrada(response.Token);
@@ -147,13 +147,13 @@ namespace Talana.Handlers
 
         static void MarcarSalida()
         {
-            //var puedeMarcarSalida = PuedeMarcarSalida();
-            //if (!puedeMarcarSalida)
-            //{
-            //    Console.WriteLine("Ya se marcó la salida.");
-            //    Thread.Sleep(3000);
-            //    Environment.Exit(0);
-            //}
+            var puedeMarcarSalida = PuedeMarcarSalida();
+            if (!puedeMarcarSalida)
+            {
+                Console.WriteLine("Ya se marcó la salida.");
+                Thread.Sleep(3000);
+                Environment.Exit(0);
+            }
 
             Console.WriteLine("Marcando salida...");
             var marcadoConExito = TalanaService.MarcarSalida(response.Token);
