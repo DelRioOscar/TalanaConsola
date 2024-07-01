@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Talana")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2683d8d304f80a42732cf059844cdedbcff84d99")]
 [assembly: System.Reflection.AssemblyProductAttribute("Talana")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Talana")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

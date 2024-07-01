@@ -1,5 +1,7 @@
-﻿using Talana.Enums;
+﻿using Newtonsoft.Json;
+using Talana.Enums;
 using Talana.Helpers;
+using Talana.Models;
 using Talana.Response;
 using Talana.Services;
 
@@ -7,19 +9,83 @@ namespace Talana.Handlers
 {
     public static class HandlerTalana
     {
-        private const string username = "187334934";
-        private const string password = "3lE0e28FDh5v";
+        private static string username = "";
+        private static string password = "";
+
         private static readonly DateTime today = DateTime.Now;
         private static LoginResponse? response = null;
 
         public static void StartHandler()
         {
-            // VerificarFeriado();
+            VerificarArchivoJsonCreado();
+            VerificarFeriado();
             VerificarDiaLaboral();
             Console.WriteLine("Iniciando sesión...");
             response = TalanaService.LoginCheckAsync(username, password);
             VerificarInicioSesion();
             MarcarAsistencia();
+        }
+
+        static void PedirCredentials()
+        {
+            Console.WriteLine("Ingrese su RUT (Ej. 123456789):");
+            username = Console.ReadLine();
+            Console.WriteLine("Ingrese su contraseña:");
+            password = Console.ReadLine();
+
+            var credencial = new Credencial
+            {
+                UserName = username,
+                Password = password
+            };
+
+            GuardarCredencial(credencial);
+        }
+
+        static void GuardarCredencial(Credencial credencial)
+        {
+            Console.WriteLine("Guardando credenciales.");
+            string json = JsonConvert.SerializeObject(credencial, Formatting.Indented);
+            File.WriteAllText("credenciales.json", json);
+            Console.WriteLine("Credenciales guardadas con éxito.");
+        }
+
+        static Credencial LeerCredencial()
+        {
+            Console.WriteLine("Leyendo credenciales.");
+            string json = File.ReadAllText("credenciales.json");
+            var credencial = JsonConvert.DeserializeObject<Credencial>(json);
+            Console.WriteLine("Credenciales leídas con éxito.");
+            return credencial;
+        }
+
+        static void VerificarUsuarioYPassword()
+        {
+            var credencial = LeerCredencial();
+            if (credencial.UserName == null || credencial.Password == null)
+            {
+                Console.WriteLine("No se encontró el usuario o la contraseña.");
+                PedirCredentials();
+            }
+            else
+            {
+                username = credencial.UserName;
+                password = credencial.Password;
+            }
+        }
+
+        static void VerificarArchivoJsonCreado()
+        {
+            Console.WriteLine("Verificando si existe el archivo credenciales.json...");
+            var existe = File.Exists("credenciales.json");
+            if (!existe)
+            {
+                PedirCredentials();
+            }
+            else
+            {
+               VerificarUsuarioYPassword();
+            }
         }
 
         static void MarcarAsistencia()
@@ -34,6 +100,14 @@ namespace Talana.Handlers
                 {
                     MarcarSalida();
                 }
+            }
+            else if (today.Hour == 14)
+            {
+                MarcarEntradaAlmuerzo();
+            }
+            else if (today.Hour == 15)
+            {
+                MarcarSalidaAlmuerzo();
             }
             else if (today.Hour == 18 && today.Minute >= 45)
             {
@@ -96,6 +170,38 @@ namespace Talana.Handlers
             }
         }
 
+        static void MarcarEntradaAlmuerzo()
+        {
+            //Console.WriteLine("Marcando entrada almuerzo...");
+            //var marcadoConExito = TalanaService.MarcarEntradaAlmuerzo(response.Token);
+            //if (marcadoConExito)
+            //{
+            //    Console.WriteLine("Entrada almuerzo marcada con éxito");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Error al marcar entrada almuerzo");
+            //}
+            //Thread.Sleep(5000);
+            //Environment.Exit(0);
+        }
+
+        static void MarcarSalidaAlmuerzo()
+        {
+            //Console.WriteLine("Marcando salida almuerzo...");
+            //var marcadoConExito = TalanaService.MarcarSalidaAlmuerzo(response.Token);
+            //if (marcadoConExito)
+            //{
+            //    Console.WriteLine("Salida almuerzo marcada con éxito");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Error al marcar salida almuerzo");
+            //}
+            //Thread.Sleep(5000);
+            //Environment.Exit(0);
+        }
+
         static void ApagarComputadora()
         {
             Console.WriteLine("Se apagará la computadora en 60 segundos...");
@@ -150,6 +256,7 @@ namespace Talana.Handlers
             Console.WriteLine("Verificando si se puede marcar salida...");
             return TalanaService.PuedeMarcar(response.Token, MarcaEnum.Salida);
         }
+
 
         static void VerificarFeriado()
         {
