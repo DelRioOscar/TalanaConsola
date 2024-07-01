@@ -159,6 +159,12 @@ namespace Talana.Services
             var responseAsObject = JsonConvert.DeserializeObject<List<MarkResponse>>(responseContent);
 
             var marcaHoy = responseAsObject.FirstOrDefault(p => p.Date == hoy.Date);
+
+            if (marcaHoy == null)
+            {
+                return true;
+            }
+
             return !marcaHoy.Marks.Any(p => p.Direction == tipoMarca);
         }
 
