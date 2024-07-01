@@ -46,37 +46,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "DotNetSeleniumExtras.WaitHelpers": {
-              "target": "Package",
-              "version": "[3.11.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
-            },
-            "SQLitePCLRaw.bundle_e_sqlite3": {
-              "target": "Package",
-              "version": "[2.1.8, )"
-            },
-            "Selenium.WebDriver": {
-              "target": "Package",
-              "version": "[4.20.0, )"
             }
           },
           "imports": [

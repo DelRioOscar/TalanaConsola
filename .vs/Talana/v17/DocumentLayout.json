@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\",
+  "WorkspaceRootPath": "C:\\Users\\odelrio\\Documents\\git_project\\Talana\\TalanaConsola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|c:\\users\\acl - \u00F3scar del r\u00EDo\\source\\repos\\talana\\talana\\handlers\\handlertalana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|c:\\users\\odelrio\\documents\\git_project\\talana\\talanaconsola\\talana\\handlers\\handlertalana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|solutionrelative:talana\\handlers\\handlertalana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\talana\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|solutionrelative:talana\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|c:\\users\\odelrio\\documents\\git_project\\talana\\talanaconsola\\talana\\services\\talanaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|solutionrelative:talana\\services\\talanaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|c:\\users\\odelrio\\documents\\git_project\\talana\\talanaconsola\\talana\\models\\credencial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1439CAAF-4C70-4223-8FDC-E862BCA41C37}|Talana\\Talana.csproj|solutionrelative:talana\\models\\credencial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,48 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:207625229:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HandlerTalana.cs",
-              "DocumentMoniker": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Handlers\\HandlerTalana.cs",
-              "RelativeDocumentMoniker": "Talana\\Handlers\\HandlerTalana.cs",
-              "ToolTip": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Handlers\\HandlerTalana.cs",
-              "RelativeToolTip": "Talana\\Handlers\\HandlerTalana.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowAcAAAAlAAAA",
+              "DocumentIndex": 2,
+              "Title": "Credencial.cs",
+              "DocumentMoniker": "C:\\Users\\odelrio\\Documents\\git_project\\Talana\\TalanaConsola\\Talana\\Models\\Credencial.cs",
+              "RelativeDocumentMoniker": "Talana\\Models\\Credencial.cs",
+              "ToolTip": "C:\\Users\\odelrio\\Documents\\git_project\\Talana\\TalanaConsola\\Talana\\Models\\Credencial.cs",
+              "RelativeToolTip": "Talana\\Models\\Credencial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T13:47:54.777Z",
+              "WhenOpened": "2024-06-26T13:47:16.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Program.cs",
-              "RelativeDocumentMoniker": "Talana\\Program.cs",
-              "ToolTip": "C:\\Users\\ACL - \u00D3scar Del R\u00EDo\\source\\repos\\Talana\\Talana\\Program.cs",
-              "RelativeToolTip": "Talana\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAiAAAA",
+              "Title": "TalanaService.cs",
+              "DocumentMoniker": "C:\\Users\\odelrio\\Documents\\git_project\\Talana\\TalanaConsola\\Talana\\Services\\TalanaService.cs",
+              "RelativeDocumentMoniker": "Talana\\Services\\TalanaService.cs",
+              "ToolTip": "C:\\Users\\odelrio\\Documents\\git_project\\Talana\\TalanaConsola\\Talana\\Services\\TalanaService.cs",
+              "RelativeToolTip": "Talana\\Services\\TalanaService.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAiwIoAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T13:47:35.14Z"
+              "WhenOpened": "2024-06-26T13:41:32.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HandlerTalana.cs",
+              "DocumentMoniker": "C:\\Users\\odelrio\\Documents\\git_project\\Talana\\TalanaConsola\\Talana\\Handlers\\HandlerTalana.cs",
+              "RelativeDocumentMoniker": "Talana\\Handlers\\HandlerTalana.cs",
+              "ToolTip": "C:\\Users\\odelrio\\Documents\\git_project\\Talana\\TalanaConsola\\Talana\\Handlers\\HandlerTalana.cs",
+              "RelativeToolTip": "Talana\\Handlers\\HandlerTalana.cs",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAwwNQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T13:47:54.777Z",
+              "EditorCaption": ""
             }
           ]
         }
